@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Технологии</title>
+    <link rel="stylesheet" type="text/css" href="technologies.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="main">
+    <div class="pattern"></div>
+
+    <!-- Здесь разместите информацию о технологиях и уровнях -->
+    <div id="technologyLevels">
+        <!-- Здесь отобразите уровни технологий -->
+    </div>
+
+
+    <div class="stats">
+        <div class="stats_block">
+            <div class="icon1"></div>
+            <span class="money"><span id="totalMoney"></span></span>
+            <div class="icon4"></div>
+            <span class="in_per_sec"><span id="incomePerSecond"></span>/с</span>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <span class="attack"><span id="attackPoints"></span></span>
+            <span class="at_per_sec"><span id="attackPerSecond"></span>/с</span>
+        </div>
+    </div>
+    <span  class="h1">Технологии</span>
+    <div class="first">
+        <span  class="h2">Фабрика</span>
+
+        <div class="icon-container">
+            <div class="ore" id="ore"></div>
+            <div class="gold" id="gold"></div>
+            <div class="diamonds" id="diamonds"></div>
+            <div class="oil" id="oil"></div>
+            <div class="uranium" id="uranium"></div>
+            <div class="oxygen" id="oxygen"></div>
+            <div class="h3" id="h3"></div>
+        </div>
+        <span  class="text">Чем больше ресурсов вы откроете, тем быстрее вы будете зарабатывать деньги и соответственно быстрее сможете развиваться.</span>
+    </div>
+
+    <div class="second">
+        <span  class="h2">Военные</span>
+
+        <div class="icon-container">
+            <div class="aircrafts" id="aircrafts"></div>
+            <div class="battleships" id="battleships"></div>
+            <div class="missiles" id="missiles"></div>
+            <div class="moontanks" id="moontanks"></div>
+            <div class="rockets" id="rockets"></div>
+            <div class="stations" id="stations"></div>
+            <div class="tanks" id="tanks"></div>
+        </div>
+        <span  class="text2">Значение уровня атаки влияет на скорость захвата городов. Чем выше ваш уровень атаки, тем быстрее вы копите баллы влияния и быстрее захватываете новые регионы.</span>
+    </div>
+
+    <!-- Контейнер для поп-ап окна -->
+    <div id="popupContainer" class="popup-container">
+    </div>
+
+    <div class="button" id="closeTechnologies">
+        <div class="btn"></div>
+        <span class="btn-txt">Закрыть</span>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="technologies.js"></script>
+
+</div>
+
+
+
+</body>
+</html>

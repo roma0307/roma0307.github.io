@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Игра США1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class=main>
+
+
+    <div id="map-container">
+        <object id="map" type="image/svg+xml" data="us_map.svg"></object>
+        <div class="pattern"></div>
+    </div>
+
+    <div class="stats">
+        <div class="stats_block">
+            <div class="icon1"></div>
+            <span class="money"><span id="totalMoney"></span></span>
+            <div class="icon4"></div>
+            <span class="in_per_sec"><span id="incomePerSecond"></span>/с</span>
+            <div class="icon2"></div>
+            <div class="icon3"></div>
+            <span class="attack"><span id="attackPoints"></span></span>
+            <span class="at_per_sec"><span id="attackPerSecond"></span>/с</span>
+        </div>
+    </div>
+
+    <div class="table" id="table"></div>
+
+    <div class="help" id="help">
+    </div>
+
+    <div class="button" id="technologies-btn">
+        <div class="btn"></div>
+        <span class="btn-txt">Технологии</span>
+    </div>
+
+
+    </div>
+
+    <button id="resetButton">Начать сначала</button>
+
+
+    <!-- Подключение script.js -->
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

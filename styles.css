@@ -1,0 +1,243 @@
+
+.main {
+	background-color:rgba(51.00000075995922, 55.00000052154064, 66.00000366568565, 1);
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+
+}
+
+.help {
+	width:35px;
+	height:35px;
+	position:absolute;
+	right:30px;
+	bottom:30px;
+	background-image:url(images/help.svg);
+}
+
+.map-container {
+	width: 100%; /* 100% ширины экрана */
+	height: 100%; /* 100% высоты экрана */
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#map {
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-webkit-filter: drop-shadow(0px 4px 4px #000);
+    filter: drop-shadow(0px 4px 4px #000);
+}
+
+.pattern {
+	width: 100%; /* 100% ширины экрана */
+	height: 100%; /* 100% высоты экрана */
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-image: url(images/pattern.png);
+    pointer-events: none;
+
+}
+
+
+#resetButton {
+	position:absolute;
+	right:20px;
+	bottom:0px;
+}
+
+
+
+.button {
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:20px;
+	bottom:20px;
+}
+.btn {
+	box-shadow:0px 0px 8px rgba(0, 0, 0, 0.30213993787765503);
+	background-color:rgba(242.00000077486038, 176.00000470876694, 5.000000176951289, 1);
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.btn-txt {
+	color:rgba(255, 255, 255, 1);
+	width:87px;
+	height:19px;
+	position:absolute;
+	left:42px;
+	top:13px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+.stats {
+	width:152px;
+	height:130px;
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+.stats_block {
+	box-shadow:0px 0px 13px rgba(28.912141285836697, 33.223091661930084, 38.82732734084129, 0.799932062625885);
+	background-color:rgba(58.3879367262125, 64.76199969649315, 80.6971438229084, 1);
+	width:150px;
+	height:130px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+}
+
+
+
+.attack {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:52px;
+	height:16px;
+	position:absolute;
+	left:45px;
+	bottom:32px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.money {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:64px;
+	height:16px;
+	position:absolute;
+	left:45px;
+	top:32px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.at_per_sec {
+	color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+	width:35px;
+	height:10px;
+	position:absolute;
+	right:10px;
+	bottom:36px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:2;
+	line-height:px;
+}
+.in_per_sec {
+	color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+	width:35px;
+	height:10px;
+	position:absolute;
+	right:10px;
+	top:33px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:2;
+	line-height:px;
+}
+.icon1 {
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:10px;
+	top:22px;
+	background-image:url(images/ic_money.svg);
+}
+.icon2 {
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:10px;
+	bottom:20px;
+	background-image:url(images/ic_energy.svg);
+}
+.icon3 {
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:50px;
+	bottom:34px;
+	background-image:url(images/clock.svg);
+}
+.icon4 {
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:50px;
+	top:35px;
+	background-image:url(images/clock.svg);
+}
+
+.table {
+	opacity:0.550000011920929;
+	position:absolute;
+	left:3px;
+	top:3px;
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:5;
+	background-color:rgba(57.00000040233135, 62.00000010430813, 73.00000324845314, 1);
+	text-align: center;
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    	text-align: left;
+
+}
+
+.player-table td {
+    padding: 10px;
+      border-bottom: 1px solid rgba(51.00000075995922, 55.00000052154064, 66.00000366568565, 1); /* Можете настроить цвет и стиль линии по вашему вкусу */
+    text-align: center;
+    	text-align: left;
+
+}
+
+.player-table th {
+    padding: 10px;
+    text-align: center;
+    	text-align: left;
+    		color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+
+
+
+}
+
+.player-row {
+	background-color:rgba(57.00000040233135, 62.00000010430813, 73.00000324845314, 1);
+		text-align: left;
+}
+

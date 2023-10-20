@@ -1,0 +1,436 @@
+
+.main {
+	background-color:rgba(51.00000075995922, 55.00000052154064, 66.00000366568565, 1);
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+
+}
+
+/* Стилизация информации об игроке */
+#playerInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+/* Стилизация поп-ап окна и его затемнения фона */
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Цвет фона и его прозрачность */
+    display: none; /* Начнем с скрытого состояния */
+}
+
+
+
+.stats {
+	width:152px;
+	height:130px;
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+.stats_block {
+	box-shadow:0px 0px 13px rgba(28.912141285836697, 33.223091661930084, 38.82732734084129, 0.799932062625885);
+	background-color:rgba(58.3879367262125, 64.76199969649315, 80.6971438229084, 1);
+	width:150px;
+	height:130px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+}
+
+
+
+.attack {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:52px;
+	height:16px;
+	position:absolute;
+	left:45px;
+	bottom:32px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.money {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:64px;
+	height:16px;
+	position:absolute;
+	left:45px;
+	top:32px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.at_per_sec {
+	color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+	width:35px;
+	height:10px;
+	position:absolute;
+	right:10px;
+	bottom:36px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:2;
+	line-height:px;
+}
+.in_per_sec {
+	color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+	width:35px;
+	height:10px;
+	position:absolute;
+	right:10px;
+	top:33px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:12px;
+	letter-spacing:2;
+	line-height:px;
+}
+.icon1 {
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:10px;
+	top:22px;
+	background-image:url(images/ic_money.svg);
+}
+.icon2 {
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:10px;
+	bottom:20px;
+	background-image:url(images/ic_energy.svg);
+}
+.icon3 {
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:50px;
+	bottom:34px;
+	background-image:url(images/clock.svg);
+}
+.icon4 {
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:50px;
+	top:35px;
+	background-image:url(images/clock.svg);
+}
+
+
+.button {
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:20px;
+	bottom:20px;
+}
+.btn {
+	box-shadow:0px 0px 8px rgba(0, 0, 0, 0.30213993787765503);
+	background-color:rgba(242.00000077486038, 176.00000470876694, 5.000000176951289, 1);
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.btn-txt {
+	color:rgba(255, 255, 255, 1);
+	width:87px;
+	height:19px;
+	position:absolute;
+	left:42px;
+	top:13px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+
+.pattern {
+	width: 100%; /* 100% ширины экрана */
+	height: 100%; /* 100% высоты экрана */
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-image: url(images/pattern.png);
+}
+
+.h1 {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:78px;
+	height:33px;
+	position:absolute;
+	left:20px;
+	top:20px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:34px;
+	letter-spacing:0;
+}
+.h2 {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:78px;
+	height:33px;
+	position:absolute;
+	left:70px;
+	top:100px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:28px;
+	letter-spacing:0;
+}
+.text {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:400px;
+	height:76px;
+	position:absolute;
+    left:800px;
+	top:100px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+}
+.text2 {
+	color:rgba(208.0000028014183, 212.00000256299973, 221.00000202655792, 1);
+	width:400px;
+	height:76px;
+	position:absolute;
+    left:800px;
+    top:100px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+}
+.icon-container {
+    display: flex; /* Располагаем дочерние элементы горизонтально */
+    gap: 15px; /* Отступы между элементами */
+    left:250px;
+	top:100px;
+	position:absolute;
+
+}
+
+.diamonds {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/diamonds.svg);
+}
+.gold {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/gold.svg);
+}
+.h3 {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/h3.svg);
+}
+.oil {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/oil.svg);
+}
+.ore {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/ore.svg);
+}
+.oxygen {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/oxygen.svg);
+}
+.uranium {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/uranium.svg);
+}
+
+.aircrafts {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/aircrafts.svg);
+}
+.battleships {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/battleships.svg);
+}
+.missiles {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/missiles.svg);
+}
+.moontanks {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/moontanks.svg);
+}
+.rockets {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/rockets.svg);
+}
+.stations {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/stations.svg);
+}
+.tanks {
+	width:45px;
+	height:45px;
+	background-image:url(images/tech/tanks.svg);
+}
+
+
+.e3_2264 {
+	width:280px;
+	height:435px;
+	position:absolute;
+}
+.background {
+	box-shadow:0px 0px 13px rgba(28.912141285836697, 33.223091661930084, 38.82732734084129, 0.799932062625885);
+	background-color:rgba(58.3879367262125, 64.76199969649315, 80.6971438229084, 1);
+	width:280px;
+	height:435px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-radius:20px;
+}
+.popupdesc {
+	color:rgba(103.0000014603138, 108.00000116229057, 121.00000038743019, 1);
+	width:235px;
+	height:63px;
+	position:absolute;
+	left:23px;
+	top:200px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+	line-height:px;
+}
+.popupcost {
+	color:rgba(242.00000077486038, 176.00000470876694, 5.000000176951289, 1);
+	width:160px;
+	height:100px;
+	position:absolute;
+	left:80px;
+	top:160px;
+	font-family:Roboto;
+	font-size:16px;
+}
+
+.pic {
+	width:279px;
+	height:156px;
+	position:absolute;
+	left:1px;
+	top:1px;
+	background-image:url(images/energy.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.closeButton {
+	color:rgba(242.00000077486038, 176.00000470876694, 5.000000176951289, 1);
+	width:60px;
+	height:20px;
+	position:absolute;
+	left:110px;
+	top:390px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+.buyButton {
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:55px;
+	top:330px;
+}
+.popubtn {
+	box-shadow:0px 0px 8px rgba(0, 0, 0, 0.30213993787765503);
+	background-color:rgba(242.00000077486038, 176.00000470876694, 5.000000176951289, 1);
+	width:170px;
+	height:46px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.popubtn-txt {
+	color:rgba(255, 255, 255, 1);
+	width:87px;
+	height:19px;
+	position:absolute;
+	left:42px;
+	top:13px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+.popup {
+	position:absolute;
+	left:40%;
+	top:20%;
+
+}
+
+.first {
+
+}
+
+.second {
+	position:absolute;
+
+    top: 30%;
+    left: 0%;
+}
+
+
+.help {
+	width:35px;
+	height:35px;
+	position:absolute;
+	right:30px;
+	bottom:30px;
+	background-image:url(images/help.svg);
+}
